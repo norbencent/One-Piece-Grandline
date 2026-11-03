@@ -1,29 +1,254 @@
 {
 	"entries": [
-		{"id": "windmill_hollow", "sea": "east_reach", "order": 1, "name": "Windmill Hollow", "biome": "village", "level": 1, "description": "A sleepy seaside village where the captain's journey begins."},
-		{"id": "garrison_bay", "sea": "east_reach", "order": 2, "name": "Garrison Bay", "biome": "navy_town", "level": 3, "description": "A Navy outpost town under a tyrant commander."},
-		{"id": "carnival_port", "sea": "east_reach", "order": 3, "name": "Carnival Port", "biome": "town", "level": 5, "description": "A harbor seized by a crew of circus pirates."},
-		{"id": "seawall_village", "sea": "east_reach", "order": 4, "name": "Seawall Village", "biome": "village", "level": 7, "description": "Cliffside farms and a mansion hiding a butler's scheme."},
-		{"id": "floating_galley", "sea": "east_reach", "order": 5, "name": "The Floating Galley", "biome": "ship", "level": 9, "description": "A restaurant ship where cooks fight as hard as they cook."},
-		{"id": "coral_fortress", "sea": "east_reach", "order": 6, "name": "Coral Fortress", "biome": "fortress", "level": 11, "description": "A reef stronghold of sea-folk raiders oppressing the coast."},
-		{"id": "gallows_harbor", "sea": "east_reach", "order": 7, "name": "Gallows Harbor", "biome": "city", "level": 13, "description": "The last port before the Storm Line, haunted by a legendary execution."},
-		{"id": "twin_peak_current", "sea": "storm_line", "order": 8, "name": "Twin Peak Current", "biome": "mountain", "level": 15, "description": "A sea that flows uphill over a mountain into the Storm Line."},
-		{"id": "lantern_cove", "sea": "storm_line", "order": 9, "name": "Lantern Cove", "biome": "town", "level": 17, "description": "A festive town that welcomes pirates a little too warmly."},
-		{"id": "primeval_isle", "sea": "storm_line", "order": 10, "name": "Primeval Isle", "biome": "jungle", "level": 19, "description": "A jungle where ancient beasts and giant duelists still roam."},
-		{"id": "frostcrown_isle", "sea": "storm_line", "order": 11, "name": "Frostcrown Isle", "biome": "snow", "level": 21, "description": "A snowbound kingdom of tall peaks and a lonely castle."},
-		{"id": "sunscar_kingdom", "sea": "storm_line", "order": 12, "name": "Sunscar Kingdom", "biome": "desert", "level": 24, "description": "A desert kingdom drying up under a sand-lord's plot."},
-		{"id": "rumtide_isle", "sea": "storm_line", "order": 13, "name": "Rumtide Isle", "biome": "town", "level": 27, "description": "A lawless island of dreamers who believe in cities in the sky."},
-		{"id": "cloudreach", "sea": "storm_line", "order": 14, "name": "Cloudreach", "biome": "sky", "level": 30, "description": "An island of white cloud-seas ruled by a self-declared thunder god."},
-		{"id": "canal_city", "sea": "storm_line", "order": 15, "name": "Canal City", "biome": "city", "level": 33, "description": "A shipbuilding metropolis of canals, cranes and secret agents."},
-		{"id": "iron_tribunal", "sea": "storm_line", "order": 16, "name": "Iron Tribunal", "biome": "fortress", "level": 36, "description": "A judicial fortress where the government never sleeps."},
-		{"id": "shadow_hulk", "sea": "storm_line", "order": 17, "name": "The Shadow Hulk", "biome": "haunted", "level": 39, "description": "A gigantic ghost ship drifting through endless fog."},
-		{"id": "bubble_groves", "sea": "new_frontier", "order": 18, "name": "Bubble Groves", "biome": "grove", "level": 42, "description": "Mangrove islands floating on resin bubbles, crawling with bounty hunters."},
-		{"id": "abyss_palace", "sea": "new_frontier", "order": 19, "name": "Abyss Palace", "biome": "undersea", "level": 45, "description": "A glowing undersea kingdom ten thousand meters down."},
-		{"id": "burnfreeze_isle", "sea": "new_frontier", "order": 20, "name": "Burnfreeze Isle", "biome": "split", "level": 48, "description": "Half eternal fire, half eternal ice, and a lab hiding in between."},
-		{"id": "crimson_coliseum", "sea": "new_frontier", "order": 21, "name": "Crimson Coliseum", "biome": "city", "level": 52, "description": "A passionate kingdom held together by a puppet-master's strings."},
-		{"id": "titans_back", "sea": "new_frontier", "order": 22, "name": "Titan's Back", "biome": "forest", "level": 55, "description": "A forest kingdom built on the back of a walking giant."},
-		{"id": "confection_isles", "sea": "new_frontier", "order": 23, "name": "Confection Isles", "biome": "candy", "level": 58, "description": "Islands of cake and sugar ruled by a tyrant queen's family."},
-		{"id": "blossom_shogunate", "sea": "new_frontier", "order": 24, "name": "Blossom Shogunate", "biome": "feudal", "level": 62, "description": "A closed-off land of samurai, cherry blossoms and a dragon warlord."},
-		{"id": "neon_lab_isle", "sea": "new_frontier", "order": 25, "name": "Neon Lab Isle", "biome": "future", "level": 66, "description": "A futuristic island of floating labs, hard-light bridges and rogue androids."}
+		{
+			"id": "windmill_hollow",
+			"sea": "east_reach",
+			"order": 1,
+			"name": "Windmill Hollow",
+			"biome": "village",
+			"level": 1,
+			"description": "A sleepy seaside village where the captain's journey begins.",
+			"background": "res://assets/islands/backgrounds/foosha_village_640x360.png"
+		},
+		{
+			"id": "garrison_bay",
+			"sea": "east_reach",
+			"order": 2,
+			"name": "Garrison Bay",
+			"biome": "navy_town",
+			"level": 3,
+			"description": "A Navy outpost town under a tyrant commander.",
+			"background": "res://assets/islands/backgrounds/orange_town_640x360.png"
+		},
+		{
+			"id": "carnival_port",
+			"sea": "east_reach",
+			"order": 3,
+			"name": "Carnival Port",
+			"biome": "town",
+			"level": 5,
+			"description": "A harbor seized by a crew of circus pirates.",
+			"background": "res://assets/islands/backgrounds/orange_town_640x360.png"
+		},
+		{
+			"id": "seawall_village",
+			"sea": "east_reach",
+			"order": 4,
+			"name": "Seawall Village",
+			"biome": "village",
+			"level": 7,
+			"description": "Cliffside farms and a mansion hiding a butler's scheme.",
+			"background": "res://assets/islands/backgrounds/foosha_village_640x360.png"
+		},
+		{
+			"id": "floating_galley",
+			"sea": "east_reach",
+			"order": 5,
+			"name": "The Floating Galley",
+			"biome": "ship",
+			"level": 9,
+			"description": "A restaurant ship where cooks fight as hard as they cook.",
+			"background": "res://assets/islands/backgrounds/orange_town_640x360.png"
+		},
+		{
+			"id": "coral_fortress",
+			"sea": "east_reach",
+			"order": 6,
+			"name": "Coral Fortress",
+			"biome": "fortress",
+			"level": 11,
+			"description": "A reef stronghold of sea-folk raiders oppressing the coast.",
+			"background": "res://assets/islands/backgrounds/haunted_island_640x360.png"
+		},
+		{
+			"id": "gallows_harbor",
+			"sea": "east_reach",
+			"order": 7,
+			"name": "Gallows Harbor",
+			"biome": "city",
+			"level": 13,
+			"description": "The last port before the Storm Line, haunted by a legendary execution.",
+			"background": "res://assets/islands/backgrounds/orange_town_640x360.png"
+		},
+		{
+			"id": "twin_peak_current",
+			"sea": "storm_line",
+			"order": 8,
+			"name": "Twin Peak Current",
+			"biome": "mountain",
+			"level": 15,
+			"description": "A sea that flows uphill over a mountain into the Storm Line.",
+			"background": "res://assets/islands/backgrounds/foosha_village_640x360.png"
+		},
+		{
+			"id": "lantern_cove",
+			"sea": "storm_line",
+			"order": 9,
+			"name": "Lantern Cove",
+			"biome": "town",
+			"level": 17,
+			"description": "A festive town that welcomes pirates a little too warmly.",
+			"background": "res://assets/islands/backgrounds/orange_town_640x360.png"
+		},
+		{
+			"id": "primeval_isle",
+			"sea": "storm_line",
+			"order": 10,
+			"name": "Primeval Isle",
+			"biome": "jungle",
+			"level": 19,
+			"description": "A jungle where ancient beasts and giant duelists still roam.",
+			"background": "res://assets/islands/backgrounds/foosha_village_640x360.png"
+		},
+		{
+			"id": "frostcrown_isle",
+			"sea": "storm_line",
+			"order": 11,
+			"name": "Frostcrown Isle",
+			"biome": "snow",
+			"level": 21,
+			"description": "A snowbound kingdom of tall peaks and a lonely castle.",
+			"background": "res://assets/islands/backgrounds/future_island_640x360.png"
+		},
+		{
+			"id": "sunscar_kingdom",
+			"sea": "storm_line",
+			"order": 12,
+			"name": "Sunscar Kingdom",
+			"biome": "desert",
+			"level": 24,
+			"description": "A desert kingdom drying up under a sand-lord's plot.",
+			"background": "res://assets/islands/backgrounds/desert_kingdom_640x360.png"
+		},
+		{
+			"id": "rumtide_isle",
+			"sea": "storm_line",
+			"order": 13,
+			"name": "Rumtide Isle",
+			"biome": "town",
+			"level": 27,
+			"description": "A lawless island of dreamers who believe in cities in the sky.",
+			"background": "res://assets/islands/backgrounds/orange_town_640x360.png"
+		},
+		{
+			"id": "cloudreach",
+			"sea": "storm_line",
+			"order": 14,
+			"name": "Cloudreach",
+			"biome": "sky",
+			"level": 30,
+			"description": "An island of white cloud-seas ruled by a self-declared thunder god.",
+			"background": "res://assets/islands/backgrounds/sky_island_640x360.png"
+		},
+		{
+			"id": "canal_city",
+			"sea": "storm_line",
+			"order": 15,
+			"name": "Canal City",
+			"biome": "city",
+			"level": 33,
+			"description": "A shipbuilding metropolis of canals, cranes and secret agents.",
+			"background": "res://assets/islands/backgrounds/orange_town_640x360.png"
+		},
+		{
+			"id": "iron_tribunal",
+			"sea": "storm_line",
+			"order": 16,
+			"name": "Iron Tribunal",
+			"biome": "fortress",
+			"level": 36,
+			"description": "A judicial fortress where the government never sleeps.",
+			"background": "res://assets/islands/backgrounds/haunted_island_640x360.png"
+		},
+		{
+			"id": "shadow_hulk",
+			"sea": "storm_line",
+			"order": 17,
+			"name": "The Shadow Hulk",
+			"biome": "haunted",
+			"level": 39,
+			"description": "A gigantic ghost ship drifting through endless fog.",
+			"background": "res://assets/islands/backgrounds/haunted_island_640x360.png"
+		},
+		{
+			"id": "bubble_groves",
+			"sea": "new_frontier",
+			"order": 18,
+			"name": "Bubble Groves",
+			"biome": "grove",
+			"level": 42,
+			"description": "Mangrove islands floating on resin bubbles, crawling with bounty hunters.",
+			"background": "res://assets/islands/backgrounds/sky_island_640x360.png"
+		},
+		{
+			"id": "abyss_palace",
+			"sea": "new_frontier",
+			"order": 19,
+			"name": "Abyss Palace",
+			"biome": "undersea",
+			"level": 45,
+			"description": "A glowing undersea kingdom ten thousand meters down.",
+			"background": "res://assets/islands/backgrounds/future_island_640x360.png"
+		},
+		{
+			"id": "burnfreeze_isle",
+			"sea": "new_frontier",
+			"order": 20,
+			"name": "Burnfreeze Isle",
+			"biome": "split",
+			"level": 48,
+			"description": "Half eternal fire, half eternal ice, and a lab hiding in between.",
+			"background": "res://assets/islands/backgrounds/desert_kingdom_640x360.png"
+		},
+		{
+			"id": "crimson_coliseum",
+			"sea": "new_frontier",
+			"order": 21,
+			"name": "Crimson Coliseum",
+			"biome": "city",
+			"level": 52,
+			"description": "A passionate kingdom held together by a puppet-master's strings.",
+			"background": "res://assets/islands/backgrounds/orange_town_640x360.png"
+		},
+		{
+			"id": "titans_back",
+			"sea": "new_frontier",
+			"order": 22,
+			"name": "Titan's Back",
+			"biome": "forest",
+			"level": 55,
+			"description": "A forest kingdom built on the back of a walking giant.",
+			"background": "res://assets/islands/backgrounds/foosha_village_640x360.png"
+		},
+		{
+			"id": "confection_isles",
+			"sea": "new_frontier",
+			"order": 23,
+			"name": "Confection Isles",
+			"biome": "candy",
+			"level": 58,
+			"description": "Islands of cake and sugar ruled by a tyrant queen's family.",
+			"background": "res://assets/islands/backgrounds/sky_island_640x360.png"
+		},
+		{
+			"id": "blossom_shogunate",
+			"sea": "new_frontier",
+			"order": 24,
+			"name": "Blossom Shogunate",
+			"biome": "feudal",
+			"level": 62,
+			"description": "A closed-off land of samurai, cherry blossoms and a dragon warlord.",
+			"background": "res://assets/islands/backgrounds/haunted_island_640x360.png"
+		},
+		{
+			"id": "neon_lab_isle",
+			"sea": "new_frontier",
+			"order": 25,
+			"name": "Neon Lab Isle",
+			"biome": "future",
+			"level": 66,
+			"description": "A futuristic island of floating labs, hard-light bridges and rogue androids.",
+			"background": "res://assets/islands/backgrounds/future_island_640x360.png"
+		}
 	]
 }

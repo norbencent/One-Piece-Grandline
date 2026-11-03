@@ -7,9 +7,11 @@ const REQUIRED_DIRS: Array[String] = [
 	"res://assets/characters", "res://assets/audio", "res://assets/fonts",
 	"res://scenes/main", "res://scenes/menus", "res://scenes/combat", "res://scenes/ui",
 	"res://scripts/managers", "res://scripts/save_system", "res://scripts/android",
-	"res://resources/items", "res://data/characters", "res://data/islands", "res://data/items",
+	"res://resources/items", "res://data/characters", "res://data/islands", "res://data/items", "res://data/enemies",
+	"res://assets/characters/sheets", "res://assets/islands/backgrounds", "res://assets/ui/touch",
 ]
-const SCENES: Array[String] = ["res://scenes/main/SplashScreen.tscn", "res://scenes/main/BootCheck.tscn"]
+const SCENES: Array[String] = ["res://scenes/main/SplashScreen.tscn", "res://scenes/main/BootCheck.tscn",
+	"res://scenes/debug/AssetGallery.tscn"]
 
 
 func _ready() -> void:

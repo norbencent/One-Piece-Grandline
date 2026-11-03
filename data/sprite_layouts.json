@@ -1,0 +1,41 @@
+{
+	"_comment": "Sprite sheet grid layouts. rows = animation names top-to-bottom; fps/loop per animation; aliases map missing animations to existing rows.",
+	"layouts": {
+		"crew_8x8": {
+			"frame_size": [32, 40], "columns": 8,
+			"rows": ["idle", "walk", "run", "jump", "attack", "special", "hurt", "death"],
+			"fps": {"idle": 6, "walk": 10, "run": 14, "jump": 10, "attack": 16, "special": 14, "hurt": 10, "death": 8},
+			"loop": ["idle", "walk", "run"],
+			"aliases": {"victory": "special"}
+		},
+		"enemy_6x4": {
+			"frame_size": [32, 40], "columns": 6,
+			"rows": ["idle", "walk", "attack", "hurt"],
+			"fps": {"idle": 6, "walk": 9, "attack": 12, "hurt": 10},
+			"loop": ["idle", "walk"],
+			"aliases": {"death": "hurt"}
+		},
+		"boss_6x4": {
+			"frame_size": [64, 64], "columns": 6,
+			"rows": ["idle", "walk", "attack", "hurt"],
+			"fps": {"idle": 5, "walk": 8, "attack": 10, "hurt": 8},
+			"loop": ["idle", "walk"],
+			"aliases": {"death": "hurt", "special": "attack"}
+		},
+		"vfx_8x4": {
+			"frame_size": [32, 32], "columns": 8,
+			"rows": ["variant_a", "variant_b", "variant_c", "variant_d"],
+			"fps": {"variant_a": 20, "variant_b": 20, "variant_c": 20, "variant_d": 20},
+			"loop": [],
+			"aliases": {"play": "variant_a"}
+		}
+	},
+	"effects": {
+		"fire_burst": "res://assets/effects/fire_burst_8x4.png",
+		"haki_aura": "res://assets/effects/haki_aura_8x4.png",
+		"impact": "res://assets/effects/impact_8x4.png",
+		"lightning": "res://assets/effects/lightning_8x4.png",
+		"smoke": "res://assets/effects/smoke_8x4.png",
+		"water_splash": "res://assets/effects/water_splash_8x4.png"
+	}
+}

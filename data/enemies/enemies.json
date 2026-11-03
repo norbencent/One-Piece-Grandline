@@ -1,0 +1,100 @@
+{
+	"entries": [
+		{
+			"id": "marine_grunt",
+			"order": 1,
+			"name": "Navy Grunt",
+			"faction": "navy",
+			"tier": "minion",
+			"base_stats": {
+				"hp": 40,
+				"attack": 6,
+				"defense": 3,
+				"speed": 70
+			},
+			"exp": 12,
+			"gold": 8,
+			"sprite": {
+				"sheet": "res://assets/enemies/marine_grunt_6x4.png",
+				"layout": "enemy_6x4"
+			}
+		},
+		{
+			"id": "pirate_raider",
+			"order": 2,
+			"name": "Pirate Raider",
+			"faction": "pirates",
+			"tier": "minion",
+			"base_stats": {
+				"hp": 45,
+				"attack": 7,
+				"defense": 2,
+				"speed": 80
+			},
+			"exp": 14,
+			"gold": 12,
+			"sprite": {
+				"sheet": "res://assets/enemies/pirate_raider_6x4.png",
+				"layout": "enemy_6x4"
+			}
+		},
+		{
+			"id": "bounty_hunter",
+			"order": 3,
+			"name": "Bounty Hunter",
+			"faction": "hunters",
+			"tier": "elite",
+			"base_stats": {
+				"hp": 80,
+				"attack": 11,
+				"defense": 5,
+				"speed": 95
+			},
+			"exp": 30,
+			"gold": 40,
+			"sprite": {
+				"sheet": "res://assets/enemies/bounty_hunter_6x4.png",
+				"layout": "enemy_6x4"
+			}
+		},
+		{
+			"id": "sea_beast",
+			"order": 4,
+			"name": "Sea Beast",
+			"faction": "wild",
+			"tier": "elite",
+			"base_stats": {
+				"hp": 120,
+				"attack": 13,
+				"defense": 8,
+				"speed": 60
+			},
+			"exp": 45,
+			"gold": 20,
+			"sprite": {
+				"sheet": "res://assets/enemies/sea_beast_6x4.png",
+				"layout": "enemy_6x4"
+			}
+		},
+		{
+			"id": "island_warlord",
+			"order": 10,
+			"name": "Island Warlord",
+			"faction": "pirates",
+			"tier": "boss",
+			"base_stats": {
+				"hp": 900,
+				"attack": 20,
+				"defense": 12,
+				"speed": 75
+			},
+			"exp": 400,
+			"gold": 500,
+			"phases": 3,
+			"sprite": {
+				"sheet": "res://assets/bosses/island_warlord_boss_6x4.png",
+				"layout": "boss_6x4"
+			}
+		}
+	]
+}

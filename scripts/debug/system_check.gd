@@ -20,6 +20,7 @@ func run(tree: SceneTree) -> Array[Dictionary]:
 	_check_display()
 	_check_input()
 	_check_data()
+	_check_sprites()
 	_check_audio()
 	_check_settings()
 	_check_progression()
@@ -86,6 +87,43 @@ func _check_data() -> void:
 			orphans.append(str(island["id"]))
 	_record("Island -> sea links", orphans.is_empty(), "all linked" if orphans.is_empty() else ", ".join(orphans))
 	_record("Item catalog", DataRegistry.count("items") > 0, "%d items" % DataRegistry.count("items"))
+	_record("Enemy roster", DataRegistry.count("enemies") >= 5, "%d enemies/bosses" % DataRegistry.count("enemies"))
+
+
+func _check_sprites() -> void:
+	var bad: Array[String] = []
+	var checked := 0
+	var entries: Array[Dictionary] = DataRegistry.get_all("characters")
+	entries.append_array(DataRegistry.get_all("enemies"))
+	for e in entries:
+		var layout := str(e["sprite"]["layout"])
+		var cols := int(SpriteSheetLibrary.get_layout(layout).get("columns", 0))
+		for alt in [false, true]:
+			if alt and not (e["sprite"] as Dictionary).has("alt_sheet"):
+				continue
+			var frames := SpriteSheetLibrary.frames_for_entry(e, alt)
+			checked += 1
+			if frames == null:
+				bad.append(str(e["id"]))
+				continue
+			for anim in SpriteSheetLibrary.animation_names(layout):
+				if not frames.has_animation(anim) or frames.get_frame_count(anim) != cols:
+					bad.append("%s:%s" % [e["id"], anim])
+	_record("Sprite sheets -> SpriteFrames", bad.is_empty(),
+		"%d sheets, all animations built" % checked if bad.is_empty() else ", ".join(bad))
+	var crew_anims := SpriteSheetLibrary.animation_names("crew_8x8")
+	var required: Array[String] = ["idle", "walk", "run", "jump", "attack", "special", "hurt", "death", "victory"]
+	var missing := required.filter(func(a: String) -> bool: return not crew_anims.has(a))
+	_record("Crew animation set", missing.is_empty(), "%d animations per character" % crew_anims.size())
+	var fx_bad: Array[String] = []
+	for id in SpriteSheetLibrary.effect_ids():
+		var f := SpriteSheetLibrary.effect_frames(id)
+		if f == null or f.get_frame_count(&"play") != 8:
+			fx_bad.append(id)
+	_record("VFX sheets", fx_bad.is_empty(), "%d effects" % SpriteSheetLibrary.effect_ids().size() if fx_bad.is_empty() else ", ".join(fx_bad))
+	var shared := SpriteSheetLibrary.frames_for_entry(DataRegistry.get_entry("characters", "rook")) \
+		== SpriteSheetLibrary.frames_for_entry(DataRegistry.get_entry("characters", "rook"))
+	_record("Sprite cache reuse", shared, "one SpriteFrames per sheet")
 
 
 func _check_audio() -> void:

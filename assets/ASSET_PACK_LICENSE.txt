@@ -1,0 +1,5 @@
+Assets generated as original pixel-art prototype material.
+You may use and modify these generated assets in your personal Godot prototype.
+One Piece and related franchise intellectual property belong to their respective rights holders.
+This pack does not include official One Piece artwork, music, logos, or character designs.
+For public/commercial distribution, use original characters and properly licensed material.

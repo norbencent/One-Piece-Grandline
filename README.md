@@ -10,7 +10,9 @@ An **offline** retro-futuristic pixel-art pirate action RPG for **Android**, bui
 |---|---|
 | ![splash](docs/screenshots/phase1_splash.png) | ![boot check](docs/screenshots/phase1_bootcheck.png) |
 
-(Real frames rendered by Godot from this project.)
+![asset gallery](docs/screenshots/asset_gallery_attack.png)
+
+(Real frames rendered by Godot from this project. The gallery shows the imported asset packs playing their *attack* animation.)
 
 ---
 
@@ -132,6 +134,28 @@ The runner exits with code 0 only if all checks pass. Some `ERROR`/`WARNING` lin
 6. For a release build: create a keystore and set it under *Keystore → Release* in the preset. Keep it out of git (it's already in `.gitignore`).
 
 On first launch the phone should show **"29 / 29 SYSTEMS ONLINE"** on the BootCheck screen. (The headless runner adds 5 project-file checks, for 34 in total.)
+
+## Imported art (asset packs)
+
+Three uploaded prototype packs were merged, with duplicates removed (77 PNGs). Each pack's notes say it is original generated pixel art containing no official franchise artwork; see `assets/ASSET_PACK_IP_NOTE.txt` and `assets/ASSET_PACK_LICENSE.txt`.
+
+| Folder | Contents | Layout |
+|---|---|---|
+| `assets/characters/sheets/` | 10 crew sheets (main skin) | 8×8 grid, 32×40 frames, rows: idle, walk, run, jump, attack, special, hurt, death |
+| `assets/characters/sheets_alt/` | 10 alternate crew skins | same |
+| `assets/characters/portraits/` | 10 portraits, 96×120 | — |
+| `assets/enemies/` | Navy grunt, pirate raider, bounty hunter, sea beast | 6×4 grid, 32×40 frames |
+| `assets/bosses/` | Island warlord | 6×4 grid, 64×64 frames |
+| `assets/effects/` | fire burst, haki aura, impact, lightning, smoke, water splash | 8×4 grid, 32×32 frames |
+| `assets/islands/backgrounds/` | 6 island backgrounds, 640×360 | — |
+| `assets/environments/tiles/` | 16 px world tile atlas | 8×4 tiles |
+| `assets/ships/`, `assets/icons/`, `assets/ui/{buttons,touch,hud}/` | Sloop, 9 item icons and a 24 px icon atlas, menu and touch buttons, joystick, HUD bars, panel | — |
+
+All asset paths live in data: `data/characters/crew.json` (`sprite.sheet / alt_sheet / portrait`), `data/enemies/enemies.json`, `data/islands/islands.json` (`background`) and `data/items/*.json` (`icon`). `data/sprite_layouts.json` defines each sheet grid, plus FPS, looping and aliases (`victory` → `special`, enemy `death` → `hurt`). `SpriteSheetLibrary` (`scripts/animation/sprite_sheet_library.gd`) turns a sheet into cached `SpriteFrames`. It checks each sheet's size against its layout and reports a mismatch as an error. DataRegistry flags any data entry that points to a missing file.
+
+**Preview:** BootCheck → **GALLERY** (or run `scenes/debug/AssetGallery.tscn`). It cycles animations, islands and skins. From the command line: `godot --path . res://scenes/debug/AssetGallery.tscn -- --anim=attack --bg=2 --alt`
+
+**Gaps in the packs:** no victory row and no enemy death rows (aliased for now), no portraits for the alternate skins, no music or SFX (the procedural placeholders stay), and no pixel font. Several rows change very little from frame to frame, which is prototype-quality motion.
 
 ## Asset pipeline (for upcoming phases)
 

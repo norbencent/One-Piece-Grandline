@@ -3,6 +3,7 @@ extends Control
 ## (so the save system, storage and audio are verified on real Android hardware) and lists results.
 
 const TITLE_SCENE := "res://scenes/main/SplashScreen.tscn"
+const GALLERY_SCENE := "res://scenes/debug/AssetGallery.tscn"
 
 @onready var _header: Label = %Header
 @onready var _info: Label = %Info
@@ -10,6 +11,7 @@ const TITLE_SCENE := "res://scenes/main/SplashScreen.tscn"
 @onready var _results: VBoxContainer = %Results
 @onready var _rerun: Button = %RerunButton
 @onready var _title_button: Button = %TitleButton
+@onready var _gallery_button: Button = %GalleryButton
 
 
 func _ready() -> void:
@@ -17,6 +19,9 @@ func _ready() -> void:
 	_info.add_theme_color_override("font_color", NeonTheme.TEXT_DIM)
 	_rerun.pressed.connect(_on_rerun)
 	_title_button.pressed.connect(_go_title)
+	_gallery_button.pressed.connect(func() -> void:
+		AudioManager.play_ui("ui_confirm")
+		SceneManager.change_scene(GALLERY_SCENE))
 	Platform.push_back_handler(_go_title)
 	_info.text = "%s  |  %s  |  window %s  |  user:// %s" % [
 		OS.get_name(),

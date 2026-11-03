@@ -10,7 +10,10 @@ const REQUIRED_FIELDS := {
 	"islands": ["id", "name", "sea", "order", "biome"],
 	"seas": ["id", "name", "order"],
 	"items": ["id", "name", "category", "rarity", "price"],
+	"enemies": ["id", "name", "tier", "base_stats", "sprite"],
 }
+## Entry keys that hold res:// asset paths; each must exist or it's reported in `errors`.
+const ASSET_KEYS: Array[String] = ["sheet", "alt_sheet", "portrait", "background", "icon"]
 
 var errors: PackedStringArray = []
 var _tables: Dictionary = {}
@@ -28,6 +31,7 @@ func reload() -> void:
 	_load_dir("characters", "%s/characters" % DATA_ROOT)
 	_load_dir("items", "%s/items" % DATA_ROOT)
 	_load_dir("islands", "%s/islands" % DATA_ROOT)
+	_load_dir("enemies", "%s/enemies" % DATA_ROOT)
 	for e in errors:
 		push_error("DataRegistry: %s" % e)
 
@@ -73,6 +77,17 @@ func _add_entry(category: String, entry: Variant, source: String) -> void:
 		errors.append("%s: duplicate %s id '%s'" % [source, category, id])
 		return
 	table[id] = e
+	_check_assets(e, "%s '%s'" % [category, id])
+
+
+func _check_assets(e: Dictionary, label: String) -> void:
+	for key: Variant in e:
+		var value: Variant = e[key]
+		if typeof(value) == TYPE_DICTIONARY:
+			_check_assets(value, label)
+		elif ASSET_KEYS.has(str(key)) and typeof(value) == TYPE_STRING and value != "":
+			if not ResourceLoader.exists(value):
+				errors.append("%s: missing asset %s" % [label, value])
 
 
 func has_entry(category: String, id: String) -> bool:

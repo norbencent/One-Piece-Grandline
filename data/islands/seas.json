@@ -1,0 +1,8 @@
+{
+	"category": "seas",
+	"entries": [
+		{"id": "east_reach", "order": 1, "name": "East Reach", "description": "The calm starting sea, ruled by small-time pirates and a lazy Navy garrison.", "danger": 1},
+		{"id": "storm_line", "order": 2, "name": "The Storm Line", "description": "A chaotic band of islands where compasses lie and weather has a will of its own.", "danger": 2},
+		{"id": "new_frontier", "order": 3, "name": "New Frontier", "description": "The final sea, home to emperor-class crews and neon-lit super-science.", "danger": 3}
+	]
+}

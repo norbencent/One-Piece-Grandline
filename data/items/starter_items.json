@@ -1,0 +1,16 @@
+{
+	"entries": [
+		{"id": "meat_on_bone", "name": "Meat on the Bone", "category": "food", "rarity": "common", "price": 20, "stackable": true, "effect": {"heal_hp": 40}, "description": "Huge, juicy and restorative."},
+		{"id": "sea_ration", "name": "Sea Ration", "category": "food", "rarity": "common", "price": 10, "stackable": true, "effect": {"heal_stamina": 30}, "description": "Hard biscuit. Restores stamina."},
+		{"id": "medic_tonic", "name": "Medic Tonic", "category": "healing", "rarity": "uncommon", "price": 45, "stackable": true, "effect": {"heal_hp": 100}, "description": "Nibs's own recipe. Restores a lot of HP."},
+		{"id": "energy_cola", "name": "Energy Cola", "category": "healing", "rarity": "uncommon", "price": 40, "stackable": true, "effect": {"heal_energy": 50}, "description": "Fizzy fuel. Restores energy."},
+		{"id": "rusty_cutlass", "name": "Rusty Cutlass", "category": "weapon", "rarity": "common", "price": 60, "stackable": false, "stats": {"attack": 3}, "description": "Better than nothing."},
+		{"id": "navy_saber", "name": "Navy Saber", "category": "weapon", "rarity": "rare", "price": 300, "stackable": false, "stats": {"attack": 8, "crit_chance": 0.02}, "description": "Standard issue, surprisingly sharp."},
+		{"id": "deck_vest", "name": "Deckhand Vest", "category": "armor", "rarity": "common", "price": 50, "stackable": false, "stats": {"defense": 3}, "description": "Salt-stained but sturdy."},
+		{"id": "storm_compass", "name": "Storm Compass", "category": "accessory", "rarity": "epic", "price": 900, "stackable": false, "stats": {"speed": 6}, "description": "Always points to the next island."},
+		{"id": "driftwood", "name": "Driftwood", "category": "material", "rarity": "common", "price": 5, "stackable": true, "description": "Ship repair material."},
+		{"id": "neon_core", "name": "Neon Core", "category": "material", "rarity": "legendary", "price": 2500, "stackable": true, "description": "Pulsing energy from the Neon Lab Isle."},
+		{"id": "gold_doubloon", "name": "Ancient Doubloon", "category": "treasure", "rarity": "rare", "price": 500, "stackable": true, "description": "Stamped with a forgotten king's face."},
+		{"id": "old_map_scrap", "name": "Old Map Scrap", "category": "quest", "rarity": "uncommon", "price": 0, "stackable": true, "description": "Part of a larger treasure map."}
+	]
+}

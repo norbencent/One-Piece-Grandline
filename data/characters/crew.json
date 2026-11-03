@@ -1,0 +1,84 @@
+{
+	"entries": [
+		{
+			"id": "rook", "order": 1, "name": "Rook Calloway", "title": "Captain", "role": "Elastic Brawler",
+			"fruit": "coil_fruit", "color": "#ff3b5c",
+			"description": "A reckless captain whose Coil-Coil Fruit turned his body into living spring-steel.",
+			"base_stats": {"hp": 120, "attack": 14, "defense": 9, "speed": 110, "stamina": 100, "energy": 100, "crit_chance": 0.08},
+			"growth": {"hp": 14, "attack": 2.2, "defense": 1.2, "speed": 1.0, "stamina": 3, "energy": 3, "crit_chance": 0.002},
+			"skills": ["coil_jab", "coil_gatling", "coil_hammer", "overdrive_2", "overdrive_3", "overdrive_4", "overdrive_5"]
+		},
+		{
+			"id": "kaito", "order": 2, "name": "Kaito Shirane", "title": "Swordmaster", "role": "Triple-Blade Swordsman",
+			"fruit": "", "color": "#4dff9a",
+			"description": "A wandering swordsman chasing the title of greatest blade on the seas.",
+			"base_stats": {"hp": 115, "attack": 16, "defense": 10, "speed": 100, "stamina": 110, "energy": 80, "crit_chance": 0.12},
+			"growth": {"hp": 13, "attack": 2.6, "defense": 1.3, "speed": 0.8, "stamina": 3, "energy": 2, "crit_chance": 0.003},
+			"skills": ["single_edge", "twin_edge", "triple_edge", "demon_cleave", "gale_spiral", "nine_phantom_blades"]
+		},
+		{
+			"id": "mira", "order": 3, "name": "Mira Vey", "title": "Navigator", "role": "Storm Weaver",
+			"fruit": "", "color": "#29d8ff",
+			"description": "A sharp navigator who bends the weather with a modular storm staff.",
+			"base_stats": {"hp": 90, "attack": 11, "defense": 7, "speed": 115, "stamina": 90, "energy": 130, "crit_chance": 0.10},
+			"growth": {"hp": 10, "attack": 1.8, "defense": 0.9, "speed": 1.1, "stamina": 2, "energy": 4, "crit_chance": 0.002},
+			"skills": ["cloud_bolt", "thunder_lance", "lightning_tempo", "skyfather_storm"]
+		},
+		{
+			"id": "pip", "order": 4, "name": "Pip Hollow", "title": "Sharpshooter", "role": "Slingshot Sniper",
+			"fruit": "", "color": "#ffc847",
+			"description": "A self-proclaimed legend with impossible aim and a bag of trick ammunition.",
+			"base_stats": {"hp": 95, "attack": 12, "defense": 7, "speed": 105, "stamina": 95, "energy": 110, "crit_chance": 0.18},
+			"growth": {"hp": 10, "attack": 2.0, "defense": 0.9, "speed": 1.0, "stamina": 2, "energy": 3, "crit_chance": 0.004},
+			"skills": ["lead_shot", "blast_pellet", "vine_seed", "meteor_volley"]
+		},
+		{
+			"id": "dante", "order": 5, "name": "Dante Reyes", "title": "Chef", "role": "Blazing Kick-Fighter",
+			"fruit": "", "color": "#ff8a3b",
+			"description": "A gallant ship's cook who never fights with his hands, only blazing kicks.",
+			"base_stats": {"hp": 110, "attack": 15, "defense": 9, "speed": 120, "stamina": 105, "energy": 90, "crit_chance": 0.10},
+			"growth": {"hp": 12, "attack": 2.4, "defense": 1.1, "speed": 1.2, "stamina": 3, "energy": 2, "crit_chance": 0.003},
+			"skills": ["searing_heel", "air_step", "mince_barrage", "inferno_leg"]
+		},
+		{
+			"id": "nibs", "order": 6, "name": "Nibs", "title": "Doctor", "role": "Shapeshifting Medic",
+			"fruit": "beast_fruit", "color": "#ff9fd6",
+			"description": "A shy sea-otter doctor whose Beast Fruit and miracle pills unlock new forms.",
+			"base_stats": {"hp": 100, "attack": 10, "defense": 11, "speed": 100, "stamina": 100, "energy": 110, "crit_chance": 0.06},
+			"growth": {"hp": 12, "attack": 1.6, "defense": 1.5, "speed": 0.9, "stamina": 3, "energy": 3, "crit_chance": 0.002},
+			"skills": ["field_heal", "heavy_form", "shell_form", "titan_form"]
+		},
+		{
+			"id": "selene", "order": 7, "name": "Selene Ardent", "title": "Archaeologist", "role": "Phantom-Limb Scholar",
+			"fruit": "bloom_fruit", "color": "#b388ff",
+			"description": "A calm scholar who blooms spectral arms from any surface.",
+			"base_stats": {"hp": 95, "attack": 12, "defense": 8, "speed": 100, "stamina": 90, "energy": 125, "crit_chance": 0.09},
+			"growth": {"hp": 10, "attack": 2.0, "defense": 1.0, "speed": 0.9, "stamina": 2, "energy": 4, "crit_chance": 0.002},
+			"skills": ["hundred_hands", "binding_clutch", "colossal_hand"]
+		},
+		{
+			"id": "gage", "order": 8, "name": "Gage Ironwell", "title": "Shipwright", "role": "Cyborg Engineer",
+			"fruit": "", "color": "#5ec8ff",
+			"description": "A loud cyborg shipwright running on cola-fuel and big ideas.",
+			"base_stats": {"hp": 140, "attack": 13, "defense": 14, "speed": 90, "stamina": 120, "energy": 100, "crit_chance": 0.06},
+			"growth": {"hp": 16, "attack": 2.0, "defense": 1.8, "speed": 0.7, "stamina": 4, "energy": 3, "crit_chance": 0.001},
+			"skills": ["piston_punch", "arsenal_mode", "neon_beam"]
+		},
+		{
+			"id": "lute", "order": 9, "name": "Maestro Lute", "title": "Musician", "role": "Phantom Violinist",
+			"fruit": "echo_fruit", "color": "#9ff5ff",
+			"description": "A cursed violinist whose bow doubles as a frost-edged rapier.",
+			"base_stats": {"hp": 100, "attack": 13, "defense": 8, "speed": 125, "stamina": 95, "energy": 115, "crit_chance": 0.11},
+			"growth": {"hp": 11, "attack": 2.1, "defense": 1.0, "speed": 1.3, "stamina": 2, "energy": 3, "crit_chance": 0.003},
+			"skills": ["requiem_thrust", "frost_sonata", "soul_encore"]
+		},
+		{
+			"id": "kai", "order": 10, "name": "Kai Maroa", "title": "Helmsman", "role": "Tidal Martial Artist",
+			"fruit": "", "color": "#2f8fff",
+			"description": "A towering sea-folk helmsman who channels the ocean through open-palm strikes.",
+			"base_stats": {"hp": 150, "attack": 14, "defense": 13, "speed": 95, "stamina": 115, "energy": 100, "crit_chance": 0.07},
+			"growth": {"hp": 17, "attack": 2.2, "defense": 1.7, "speed": 0.8, "stamina": 3, "energy": 3, "crit_chance": 0.002},
+			"skills": ["tide_palm", "riptide_wave", "abyssal_current"]
+		}
+	]
+}

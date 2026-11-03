@@ -1,0 +1,87 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/main/splash_screen.gd" id="1_splash"]
+[ext_resource type="Script" path="res://scripts/ui/neon_backdrop.gd" id="2_backdrop"]
+
+[node name="SplashScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_splash")
+
+[node name="Backdrop" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("2_backdrop")
+
+[node name="TitleBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.42
+offset_top = 24.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_constants/separation = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="TitleBox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "NEON TIDES"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="TitleBox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "PIRATE LEGACY"
+horizontal_alignment = 1
+
+[node name="Tagline" type="Label" parent="TitleBox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "A retro-futuristic pirate adventure"
+horizontal_alignment = 1
+
+[node name="TapLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -36.0
+offset_right = 120.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "TAP TO START"
+horizontal_alignment = 1
+
+[node name="VersionLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -180.0
+offset_top = -16.0
+offset_right = -6.0
+offset_bottom = -2.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 9
+text = "v0.1.0"
+horizontal_alignment = 2
